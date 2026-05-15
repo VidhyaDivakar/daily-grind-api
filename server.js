@@ -7,6 +7,11 @@ app.get('/', (res,req) => {
 res.send('hello');
 });
 
-app.listen(port, () =>{
+//app.get('/users', aync(req, res) => {}
+   
 
+
+
+app.listen(port, () =>{
+console.log(`Server is running at port:${port}`);
 });
