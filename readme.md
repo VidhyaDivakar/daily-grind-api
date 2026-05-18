@@ -20,3 +20,13 @@ If you send that directly: It can expose **sensitive backend information, It can
 #### How might you modify this application to get a fact in a different language if the external API supported it (e.g., with a query parameter like `?language=de`)?
 
 To modify the application so it returns a fact in a different language, you can use query parameters in your Express route. Instead of hardcoding the language, read it from req.query.language and pass it to the external API using Axios params. For example, if the user calls /api/fun-fact?language=de, your server will extract "de" and send it to the Useless Facts API as { params: { language: "de" } }. If no language is provided, you can default it to English by using "en".
+
+#### Screenshots
+
+Url: http://localhost:3000/api/fun-fact/
+
+![1779107809099](image/README/1779107809099.png)
+
+http://localhost:3000/api/fun-fact/text
+
+![1779107874421](image/README/1779107874421.png)
